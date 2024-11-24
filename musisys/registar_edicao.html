@@ -1,0 +1,143 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <head>
+        <title>Musisys - Registar Edição</title>
+        <link rel="icon" type="image/png" href="images/favicon.png" />
+        
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+
+            header {
+                background-color: #FFF;
+                text-align: center;
+                font-size: 35px;
+                color: dimgray;
+            }
+
+
+            nav {
+                float: left;
+                width: 20%;
+                height: 60%; 
+                background: grey;
+                padding: 20px;
+            }
+
+
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            content {
+                float: left;
+                padding: 20px;
+                width: 100%;
+                background-color: #f1f1f1;
+                height: 50%; 
+                background: linear-gradient(to top, #003366, #4ea5d8);
+                color: whitesmoke;
+                text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+               1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+            }
+
+
+            section::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+
+            footer {
+                background-color: #003366;
+                padding: 10px;
+                text-align: right;
+                color: whitesmoke;
+                text-shadow: 2px 0 black, -2px 0 black, 0 2px black, 0 -2px black,
+               1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+            }
+
+
+            @media (max-width: 600px) {
+                nav, content {
+                width: 100%;
+                height: auto;
+                }
+            }
+            
+            .tab {
+                display: inline-block;
+                margin-left: 4em;
+            }
+            
+            input[type=submit] {
+                width: 12em;  
+                height: 2em; 
+                font-size: 1.12em;
+            } 
+            
+            input[type=reset] {
+                width: 12em;  
+                height: 2em; 
+                font-size: 1.12em;
+            }   
+        </style>
+        
+    </head>
+    <body>
+        <center>
+            <header>
+                <img style="width: 100%;" src="images/header.png"/>
+            </header>
+            
+            <section>
+                <content>
+                        <p><h3>Registar Edição:</h3></p>
+                        <form method="post" action="registar_edicao.php">
+	                   <label for="nome">Nome: </label>
+                        <input type="text" name="nome" size="30" maxlength="30">
+                        <br><br>
+                        <label for="localidade">Localidade: </label>
+                        <input type="text" name="localidade" size="30" maxlength="30">
+                        <br><br>
+                        <label for="local">Local: </label>
+                        <input type="text" name="local" size="30" maxlength="30">
+                        <br><br>
+                        <label for="data_inicio">Data de inicio:</label>
+                        <input type="date" name="data_inicio"/>
+                        <br><br>
+                        <label for="data_fim">Data de fim:</label>
+                        <input type="date" name="data_fim"/>
+                        <br><br>
+                        <label for="lotacao">Lotação: </label>
+                        <input type="number" name="lotacao" size="10" maxlength="10">
+                        <br><br>
+                        <label for="num_palcos">Número de Palcos: </label>
+                        <input type="number" name="num_palcos" size="10" maxlength="10">
+                        <br><br>
+	                   <input type="submit" name="Submit" value="Introduzir">
+		              <input type="reset" name="Submit2" value="Limpar">
+                    </form>
+                <br>
+                <span style="float:left;"> <form action=menu.html> <input type=submit value="Voltar ao menu"> </form> </span>
+                    
+                </content>
+            </section>
+            
+            <footer>
+                Powered by: Diogo Pereira - 110976 
+                <br> Bruno Silva - 100005
+            </footer>
+            
+            
+        </center>
+    </body>
+</html>
